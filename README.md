@@ -1,19 +1,28 @@
 
 
 
+
 #include <iostream>
 using namespace std;
 
 //function prototyping
 void displayarray(char array[3][3]);
+
 void player1(char array[3][3]); //player 1 selects position
+
 void player2(char array[3][3]); //player 2 selects position
+
 bool player1wins(char array[3][3], bool &); //the bool functions are to determine if winning conditions exist
+
 bool player2wins(char array[3][3], bool &);
 
 int main()
 {
-	char tictactoe[3][3] = { { '*','*', '*' },{ '*','*', '*' },{ '*','*', '*' } }; // intializing to *
+
+
+	char tictactoe[3][3] = { { '*','*', '*' },
+	                           { '*','*', '*' },
+				   { '*','*', '*' } }; // intializing to *
 
 	displayarray(tictactoe); //displaying intialized array for first time
 
@@ -83,8 +92,11 @@ void displayarray(char array[3][3])
 
 void player1(char array[3][3])
 {
+
 	int row1, column1;
+	
 	cout << "Player 1: Choose a location on the board by first entering the row (0-2) then column (0-2) number" << endl;
+	
 	cin >> row1 >> column1;
 
 
@@ -128,6 +140,8 @@ void player1(char array[3][3])
 
 void player2(char array[3][3])
 {
+
+
 	int row2, column2;
 	cout << "Player 2: Choose a location on the board by first entering the row (0-2) then column (0-2) number" << endl;
 	cin >> row2 >> column2;
@@ -171,6 +185,8 @@ void player2(char array[3][3])
 
 bool player1wins(char array[3][3], bool &condition1) //winning combinations for player 1
 {
+
+
 	int row, column;
 
 	for (row = 0; row <= 2; row++) //checking horizontal wins
@@ -218,6 +234,8 @@ bool player1wins(char array[3][3], bool &condition1) //winning combinations for 
 
 bool player2wins(char array[3][3], bool &condition2) //winning combinations for player 2
 {
+
+
 	int row, column;
 
 	for (row = 0; row <= 2; row++) //checking horizontal wins
