@@ -1,16 +1,4 @@
 
-/*
-* Author: Varika Pinnam
-* NetID: vxp171430
-* Date: Nov 29, 2017
-*
-* Course: CS-1336
-* Section: 008
-* Name: Programming Assignment #4b
-*
-* Description: This program allows two users to play tic-tac-toe.
-*
-*/
 
 #include <iostream>
 using namespace std;
